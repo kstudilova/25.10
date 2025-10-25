@@ -1,4 +1,13 @@
 #include <iostream>
+
+bool isPyth(unsigned a, unsigned b, unsigned c) {
+	bool p = (a * a == (b * b + c * c));
+	p = p || (b*b == (a * a + c * c));
+	p = p || (c * c == (a * a + b * b));
+	return p;
+}
+
+
 int main() {
 	using u_t = unsigned;
 	u_t a = 0;

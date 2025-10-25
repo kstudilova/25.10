@@ -8,6 +8,9 @@ bool isPyth(unsigned a, unsigned b, unsigned c) {
 	return p;
 }
 
+unsigned max() {
+  return std::numeric_limits<unsigned>::max();
+}
 
 int main() {
   	using u_t = unsigned;

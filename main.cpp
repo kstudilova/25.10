@@ -7,4 +7,12 @@ int main() {
 		count ++;
 	}
 
+	if (std::cin.eof ()) {
+		std::cout << count;
+		std::cout << "\n";
+	} else if (std::cin.fail()){
+		std::cerr << "Error\n";
+		return 1;
+	}
+
 }
